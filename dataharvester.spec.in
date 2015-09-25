@@ -1,0 +1,165 @@
+%define  RELEASE      1
+%define  rel          %{?CUSTOM_RELEASE} %{!?CUSTOM_RELEASE:%RELEASE}
+%define  spec_version @VERSION@
+%define  dist_version @VERSION@
+
+Summary:        library for reading from/writing to various file formats
+Name:           @PACKAGE@
+License:        GPL
+Group:          Development/Libraries
+Version:        %{spec_version}
+Release:        %rel
+Packager:       Wolfgang Waltenberger
+Source:         http://harvest.teilchen.at/%{name}-%{dist_version}.tar.gz
+URL:            http://harvest.teilchen.at/
+BuildPrereq:    swig >= 1.3.20
+BuildPrereq:    zlib-devel
+Buildroot:      %{_tmppath}/%{name}-%{version}-root
+
+%description
+The dataharvester is a library that allows reading "hierarchic tuples" from and
+writing to several file formats.
+.
+The dataharvester is a C++ library; a python interface exists, as well.
+Currently the following formats are supported:
+.
+- root ("ROOT" files, see http://root.cern.ch)
+- hbook ("HBOOK" files, readonly, via root's hbook plugin)
+- hdf (Hierarchical Data Format 5)
+- xml
+- sqlite
+- txt files
+- txt.gz files
+- Hippodraw's "tnt" files
+
+
+
+%package -n dataharvester-plugin-sqlite
+Summary: library for reading from/writing to various file formats
+Group: Development/Libraries
+Requires: dataharvester = %{version}-%{release}
+Requires: sqlite
+BuildRequires: sqlite-devel
+
+%package -n dataharvester-plugin-tnt
+Summary: library for reading from/writing to various file formats
+Group: Development/Libraries
+Requires: dataharvester = %{version}-%{release}
+
+%package -n dataharvester-plugin-gz
+Summary: library for reading from/writing to various file formats
+Group: Development/Libraries
+Requires: dataharvester = %{version}-%{release}
+
+%package -n dataharvester-plugin-hbook
+Summary: library for reading from/writing to various file formats
+Group: Development/Libraries
+Requires: dataharvester = %{version}-%{release}
+
+%package -n dataharvester-plugin-root
+Summary: library for reading from/writing to various file formats
+Group: Development/Libraries
+Requires: dataharvester = %{version}-%{release}
+
+%package -n dataharvester-plugin-tcp
+Summary: library for reading from/writing to various file formats
+Group: Development/Libraries
+Requires: dataharvester = %{version}-%{release}
+
+%package -n python-dataharvester
+Summary: library for reading from/writing to various file formats
+Group: Development/Libraries
+Requires: dataharvester = %{version}-%{release}
+
+%description -n dataharvester-plugin-gz
+The zlib plugin for the dataharvester.
+
+%description -n dataharvester-plugin-hbook
+The hbook plugin for the dataharvester.
+
+%description -n dataharvester-plugin-root
+The root plugin for the dataharvester.
+
+%description -n dataharvester-plugin-sqlite
+The sqlite plugin for the dataharvester.
+
+%description -n python-dataharvester
+The python bindings for the dataharvester.
+
+%description -n dataharvester-plugin-tnt
+The tnt ("hippodraw") plugin for the dataharvester.
+
+%description -n dataharvester-plugin-tcp
+The broken tcp plugin for the dataharvester.
+
+%package -n dataharvester-devel
+Summary: library for reading from/writing to various file formats
+Group: Development/Libraries
+Requires: dataharvester = %{version}-%{release}
+
+%description -n dataharvester-devel
+Development files for dataharvester
+
+
+%prep
+%setup -q -n %{name}-%{dist_version}
+
+%build
+%configure
+%{__make}
+
+%install
+[ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
+# [ "$RPM_BUILD_ROOT" != "/" ] && rm -rf %{_infodir}/dir
+%makeinstall
+
+%clean
+[ "$RPM_BUILD_ROOT" != "/" ] && rm -rf $RPM_BUILD_ROOT
+
+%files -n dataharvester
+%defattr(-, root, root)
+%doc AUTHORS COPYING INSTALL NEWS README TODO
+%{_bindir}/*
+%{_libdir}/*.so.*
+%{_libdir}/*.so
+%{_libdir}/dataharvester/*txt*
+%doc %{_mandir}/man1/*
+
+%files -n dataharvester-devel
+%defattr(-, root, root)
+%{_includedir}/*
+%{_libdir}/*.a
+%{_libdir}/*.la
+%{_libdir}/pkgconfig/*.pc
+
+%files -n dataharvester-plugin-sqlite
+%defattr(-, root, root)
+%{_libdir}/dataharvester/*sqlite*
+
+%files -n dataharvester-plugin-gz
+%defattr(-, root, root)
+%{_libdir}/dataharvester/*gz*
+
+%files -n dataharvester-plugin-root
+%defattr(-, root, root)
+%{_libdir}/dataharvester/*root*
+
+%files -n dataharvester-plugin-hbook
+%defattr(-, root, root)
+%{_libdir}/dataharvester/*hbook*
+
+%files -n dataharvester-plugin-tnt
+%defattr(-, root, root)
+%{_libdir}/dataharvester/*tnt*
+
+%files -n dataharvester-plugin-tcp
+%defattr(-, root, root)
+%{_libdir}/dataharvester/*tcp*
+
+%files -n python-dataharvester
+%defattr(-, root, root)
+%{_libdir}/python*/*
+
+%changelog -n dataharvester
+* Mon Mar 12 2007 Wolfgang Waltenberger <waldi@teilchen.at>
+- first spec file

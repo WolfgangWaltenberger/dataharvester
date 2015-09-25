@@ -1,0 +1,7 @@
+Event: id=23;
+Event:Vertex: x=23.; y=0.; z=0.; name="PrimaryVertex".
+Event:Vertex: x=23.; y=0.; z=-2.; name="PileupVertex".
+Event:Vertex: x=2.; y=0.; z=0.; name="SecondaryVertex".
+Event:Track: px=4.; py=3.; pz=2.; x=0.; y=1.; z=7.; name="Track2".
+Event:Track: px=5.; py=10.; pz=4.; x=0.; y=3.; z=5.; name="Track1".
+Event:fill

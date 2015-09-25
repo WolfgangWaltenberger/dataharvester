@@ -1,0 +1,242 @@
+dataharvester (0.4.5-1) unstable; urgency=low
+
+  * mkhierarchic introduced, wrapper scripts introduced
+ 
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Sat, 17 May 2013 10:10:41 +0200 
+
+dataharvester (0.4.4-1) unstable; urgency=low
+
+  * configurable via python
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Thu, 05 Sep 2013 10:10:41 +0200 
+
+dataharvester (0.4.3-1) unstable; urgency=low
+
+  * First time in a while I build debian packages
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Mon, 06 Jun 2011 10:50:21 +0200 
+
+dataharvester (0.4.0-1) unstable; urgency=low
+
+  * RootReader: handles directories, more complicated structures
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Mon, 21 Mar 2011 13:46:59 +0100 
+
+dataharvester (0.3.9-2) unstable; urgency=low
+
+  * RootWriter:flushAfter default auf 1000000.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Thu, 08 Jan 2009 13:32:10 +0100 
+
+dataharvester (0.3.9-1) unstable; urgency=low
+
+  * Tuple werden beim Schreiben nicht mehr gefillt, dafuer
+    wird currentTupleRow auch rausgeschrieben.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Tue, 07 Oct 2008 15:01:44 +0200 
+
+dataharvester (0.3.8-2) unstable; urgency=low
+
+  * Fix a few packaging quirks. Be stricter on the deps.
+ 
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Fri, 03 Oct 2008 12:24:02 +0200 
+
+dataharvester (0.3.8-1) unstable; urgency=low
+
+  * For intel CPUs, now look a the model name to determine clock speed.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Thu, 25 Sep 2008 09:34:12 +0200 
+
+dataharvester (0.3.7-1) unstable; urgency=low
+
+  * Timer added.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Wed, 24 Sep 2008 10:52:16 +0200
+
+dataharvester (0.3.6-2) unstable; urgency=low
+
+  * now links against root 5.18
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Mon, 22 Sep 2008 20:13:51 +0200
+
+dataharvester (0.3.6-1) unstable; urgency=low
+
+  * now links against root 5.17
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Tue, 27 Nov 2007 11:17:09 +0100 
+
+dataharvester (0.3.5-1) unstable; urgency=low
+
+  * A good dhf?
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Wed, 17 Oct 2007 13:54:52 +0200 
+
+dataharvester (0.3.4-1) unstable; urgency=low
+
+  * ROOT fixes.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Tue, 23 Oct 2007 10:08:09 +0200 
+
+dataharvester (0.3.3-1) unstable; urgency=low
+
+  * First dhf packaged; a few mods for vertigo.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Wed, 17 Oct 2007 13:28:04 +0200 
+
+dataharvester (0.3.2-1) unstable; urgency=low
+
+  * Fixing ROOT problems et al.
+  * Introduction of Filters and Manipulators.
+  * man.inc file was missing in tarball.
+  * Dependency on framework for all plugins introduced (make it work in gentoo). 
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Tue, 02 Oct 2007 09:06:59 +0200 
+
+dataharvester (0.3.1-1) unstable; urgency=low
+
+  * New upstream version; removed tcp plugin. Lots of fixes. A few new
+    features.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Wed, 26 Sep 2007 09:41:48 +0200 
+
+dataharvester (0.3.0-13) unstable; urgency=low
+
+  * root-* is called root-system-* in the debian repos.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Fri, 08 Jun 2007 18:24:17 +0200 
+
+dataharvester (0.3.0-12) unstable; urgency=low
+
+  * Oops! *.so was dropped in dataharvester.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Fri, 08 Jun 2007 16:37:23 +0200 
+
+dataharvester (0.3.0-11) unstable; urgency=low
+
+  * *.so only in dataharvester now. Not in -dev anymore.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Mon, 14 May 2007 08:54:28 +0200 
+
+dataharvester (0.3.0-10) unstable; urgency=low
+
+  * TupleRowConsistencyChecker a bit more verbose.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Thu, 10 May 2007 09:58:53 +0200 
+
+dataharvester (0.3.0-9) unstable; urgency=low
+
+  * More configurability:
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Mon, 07 May 2007 09:30:59 +0200 
+
+dataharvester (0.3.0-8) unstable; urgency=low
+
+  * Swig: added a few renames.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Mon, 30 Apr 2007 12:02:40 +0200 
+
+dataharvester (0.3.0-7) unstable; urgency=low
+
+  * Correct a few lintian warnings.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Fri, 20 Apr 2007 09:18:46 +0200 
+
+dataharvester (0.3.0-6) unstable; urgency=low
+
+  * Added cygwin stuff. Plus dummy package.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Mon, 16 Apr 2007 14:41:51 +0200 
+
+dataharvester (0.3.0-5) unstable; urgency=low
+
+  * Python System Example added.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Fri, 13 Apr 2007 08:38:01 +0200 
+
+dataharvester (0.3.0-4) unstable; urgency=low
+
+  * Examples added.
+ 
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Wed, 11 Apr 2007 14:56:30 +0200 
+
+dataharvester (0.3.0-3) unstable; urgency=low
+
+  * Allowing several libxml++ dependencies
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Tue, 10 Apr 2007 16:12:24 +0200
+
+dataharvester (0.3.0-2) unstable; urgency=low
+
+  * Fixing python package
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Wed, 04 Apr 2007 15:26:13 +0200
+
+dataharvester (0.3.0-1) unstable; urgency=low
+
+  * hdf plugin correct deps now
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Tue, 20 Mar 2007 16:07:39 +0100
+
+dataharvester (0.02-5) unstable; urgency=low
+
+  * txt plugin added
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Tue, 20 Mar 2007 13:58:04 +0100
+
+dataharvester (0.02-4) unstable; urgency=low
+
+  * hdf added to plugin-all
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Tue, 20 Mar 2007 13:58:04 +0100
+
+dataharvester (0.02-3) unstable; urgency=low
+
+  * hdf plugin introduced
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Tue, 20 Mar 2007 09:40:28 +0100
+
+dataharvester (0.02-2) unstable; urgency=low
+
+  * lazy binding in hbook now also works in the debian package
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Fri, 16 Mar 2007 13:48:31 +0100
+
+dataharvester (0.02-1) unstable; urgency=low
+
+  * Build dependencies added.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Wed, 14 Mar 2007 15:50:29 +0100
+
+dataharvester (0.01-5) unstable; urgency=low
+
+  * Man page added.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Wed, 14 Mar 2007 11:09:29 +0100
+
+dataharvester (0.01-4) unstable; urgency=low
+
+  * HBook added.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Fri, 09 Mar 2007 16:40:13 +0100  
+
+dataharvester (0.01-3) unstable; urgency=low
+
+  * More fixes.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Thu, 08 Mar 2007 12:33:14 +0100 
+
+
+dataharvester (0.01-2) unstable; urgency=low
+
+  * Many packaging fixes. Tcp plugin added.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Thu, 08 Mar 2007 11:38:50 +0100
+
+dataharvester (0.01-1) unstable; urgency=low
+
+  * Initial release: still many subtleties that need to be fixed:
+    e.g. no interdependecies between plugins are resolved,
+    no manpages etc.
+
+ -- Wolfgang Waltenberger <waldi@teilchen.at>  Wed,  7 Mar 2007 11:41:44 +0100
+

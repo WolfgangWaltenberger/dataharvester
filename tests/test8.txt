@@ -1,0 +1,2 @@
+people: age=32.; name="waldi".
+people: age=54.; name="rudi".

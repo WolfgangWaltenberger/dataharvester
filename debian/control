@@ -1,0 +1,185 @@
+Source: dataharvester
+Section: science
+Priority: extra
+Maintainer: Wolfgang Waltenberger <waldi@teilchen.at>
+Build-Depends: debhelper (>= 5), autotools-dev, libxml++2.6-dev, libsqlite3-dev, libroot-core-dev (>=5.13.01), zlib1g-dev, pkg-config (>=0.21), swig (>= 1.3.29), help2man, libtool, automake, sqlite3, root-plugin-hist-hbook, libiodbc2-dev, libhdf5-dev
+Standards-Version: 3.7.2
+
+Package: dataharvester
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: dataharvester-dummy
+Description: library for reading from/writing to various file formats
+ The dataharvester is a library that allows reading "hierarchic tuples" from and 
+ writing to several file formats.
+ .
+ The dataharvester is a C++ library; a python interface exists, as well.
+ Currently the following formats are supported:
+ .
+   - root ("ROOT" files, see http://root.cern.ch)
+   - hbook ("HBOOK" files, readonly, via root's hbook plugin)
+   - hdf (Hierarchical Data Format 5)
+   - xml
+   - sqlite
+   - txt files
+   - txt.gz files
+   - Hippodraw's "tnt" files
+
+Package: dataharvester-dummy
+Architecture: any
+Conflicts: dataharvester, libdataharvester-dev
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: dataharvester - dummy package
+ The dataharvester is a library that allows reading "hierarchic tuples" from and 
+ writing to several file formats. 
+ .
+ This package installs nothing. It's just a convenience package for the
+ developers. DO NOT INSTALL THIS PACKAGE unless you really know                      
+ what youre doing. 
+
+Package: libdataharvester-dev
+Section: libdevel
+Architecture: any
+Depends: dataharvester (= ${Source-Version})
+Conflicts: dataharvester-dummy
+Description: library for reading from/writing to various file formats
+ The dataharvester is a library that allows reading from and 
+ writing to several file formats.
+ .
+ This package contains the development files for the dataharvester.
+
+Package: python-dataharvester
+Architecture: any
+Depends: python, dataharvester (= ${Source-Version}) 
+Conflicts: dataharvester-dummy
+Description: library for reading from/writing to various file formats
+ The dataharvester is a library that allows reading from and 
+ writing to several file formats.
+ .
+ This package contains the python bindings.
+
+Package: dataharvester-plugin-xml
+Architecture: any
+Depends: libxml++2.6 | libxml++2.6-2 | libxml++2.6c2a, dataharvester (= ${Source-Version})
+Conflicts: dataharvester-dummy
+Description: library for reading from/writing to various file formats
+ The dataharvester is a library that allows reading from and 
+ writing to several file formats.
+ .
+ This package contains the Xml plugin for the dataharvester.
+
+Package: dataharvester-plugin-sqlite3
+Architecture: any
+Depends: sqlite3, dataharvester (= ${Source-Version})
+Conflicts: dataharvester-dummy
+Description: library for reading from/writing to various file formats
+ The dataharvester is a library that allows reading from and 
+ writing to several file formats.
+ .
+ This package contains the sqlite3 plugin for the dataharvester.
+
+Package: dataharvester-plugin-hdf
+Architecture: any
+Conflicts: dataharvester-dummy
+Depends: libhdf5-serial-1.6.6-0 | libhdf5-1.6.6-0 | libhdf5-1.8, dataharvester (= ${Source-Version})
+Description: library for reading from/writing to various file formats
+ The dataharvester is a library that allows reading from and 
+ writing to several file formats.
+ .
+ This package contains the hdf plugin for the dataharvester.
+
+Package: dataharvester-plugin-root
+Architecture: any
+Depends: root-common | root-system-common (>=5.18.00), root-bin | root-system-bin (>=5.18.00), dataharvester (= ${Source-Version})
+Conflicts: dataharvester-dummy
+Description: library for reading from/writing to various file formats
+ The dataharvester is a library that allows reading from and 
+ writing to several file formats.
+ .
+ This package contains the root plugin for the dataharvester.
+
+Package: dataharvester-plugin-zlib
+Architecture: any
+Depends: zlib1g, dataharvester (= ${Source-Version})
+Conflicts: dataharvester-dummy
+Description: library for reading from/writing to various file formats
+ The dataharvester is a library that allows reading from and 
+ writing to several file formats.
+ .
+ This package contains the zlib plugin for the dataharvester.
+
+Package: dataharvester-plugin-hbook
+Architecture: any
+Depends: root-plugin-hist-hbook (>=5.11.00),  root-common | root-system-common (>=5.11.00), root-bin | root-system-bin (>=5.11.00), dataharvester (= ${Source-Version})
+Conflicts: dataharvester-dummy
+Description: library for reading from/writing to various file formats
+ The dataharvester is a library that allows reading from and 
+ writing to several file formats.
+ .
+ This package contains the hbook plugin for the dataharvester.
+
+Package: dataharvester-plugin-tnt
+Architecture: any
+Depends: dataharvester (= ${Source-Version})
+Conflicts: dataharvester-dummy
+Description: library for reading from/writing to various file formats
+ The dataharvester is a library that allows reading "hierarchic tuples" from and 
+ writing to several file formats.
+ .
+ This package contains the tnt (hippodraw) plugin for the dataharvester.
+
+Package: dataharvester-plugin-tcp
+Architecture: any
+Depends: dataharvester (= ${Source-Version})
+Conflicts: dataharvester-dummy
+Description: library for reading from/writing to various file formats
+ The dataharvester is a library that allows reading from "hierarchic tuples" and 
+ writing to several file formats.
+ .
+ This package contains the BROKEN tcp plugin for the dataharvester. FIXME!
+
+Package: dataharvester-plugin-txt
+Architecture: any
+Depends: dataharvester (= ${Source-Version})
+Conflicts: dataharvester-dummy
+Description: library for reading from/writing to various file formats
+ The dataharvester is a library that allows reading from "hierarchic tuples" and 
+ writing to several file formats.
+ .
+ This package contains the txt plugin for the dataharvester.
+
+Package: dataharvester-plugin-dhf
+Architecture: any
+Depends: dataharvester (= ${Source-Version})
+Conflicts: dataharvester-dummy
+Description: library for reading from/writing to various file formats
+ The dataharvester is a library that allows reading from "hierarchic tuples" and 
+ writing to several file formats.
+ .
+ This package contains the binary dhf ( data harvester format ) plugin for the dataharvester.
+
+
+Package: dataharvester-plugin-all
+Architecture: all
+Depends: dataharvester-plugin-zlib (= ${Source-Version}), dataharvester-plugin-root (= ${Source-Version}), dataharvester-plugin-sqlite3 (= ${Source-Version}), dataharvester-plugin-xml (= ${Source-Version}), dataharvester-plugin-hbook (= ${Source-Version}), dataharvester-plugin-tcp (= ${Source-Version}), dataharvester-plugin-tnt (= ${Source-Version}), dataharvester-plugin-hdf (= ${Source-Version}), dataharvester-plugin-txt (= ${Source-Version})
+Conflicts: dataharvester-dummy
+Description: library for reading from/writing to various file formats
+ The dataharvester is a library that allows reading "hierarchic tuples" from and 
+ writing to several file formats.
+ .
+ This package depends on all dataharvester plugins.
+
+Package: dataharvester-all
+Architecture: all
+Depends: dataharvester-plugin-all (= ${Source-Version}), python-dataharvester (= ${Source-Version}), dataharvester-doc (= ${Source-Version}), libdataharvester-dev (= ${Source-Version})
+Conflicts: dataharvester-dummy
+Description: library for reading from/writing to various file formats
+ The dataharvester is a library that allows reading "hierarchic tuples" from and 
+ writing to several file formats.
+ .
+ This package installs all dataharvester packages.
+
+Package: dataharvester-doc
+Architecture: all
+Description: library for reading from/writing to various file formats
+ This package contains the documentation of the data harvester.

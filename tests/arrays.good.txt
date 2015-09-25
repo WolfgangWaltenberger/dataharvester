@@ -1,0 +1,2 @@
+People: FavoriteNumbers=3.14159, 2.71828; FunnyInts=1, 2, 3; Name=Laurenz
+People: FavoriteNumbers=0., 1.; FunnyInts=2, 3, 4; Name=Winni

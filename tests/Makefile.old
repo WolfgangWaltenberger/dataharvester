@@ -1,0 +1,36 @@
+CPPFLAGS = -I../include -I$(shell root-config --incdir) 
+CPPFLAGS += -I/usr/include/python2.3 
+#-ggdb
+#C_DEFINES = -DWITH_ROOT -DWITH_ZLIB
+
+ROOTFLAGS = # -L${ROOTSYS}/lib/ -lRint -lTree 
+HARVESTFLAGS = -L../ -lDataHarvester -ldl
+
+ALLFLAGS = ${CPPFLAGS} ${ROOTFLAGS} ${HARVESTFLAGS} ${C_DEFINES}
+
+all:
+	${CXX} ${ALLFLAGS} -o HarvestingTest HarvestingTest.cpp MultiFileTcpTest.cpp
+
+install:
+	cd .. && make install
+
+HarvestingConverter:
+	cd .. && make HarvestingConverter
+
+HarvesterCommand:
+	cd .. && make HarvesterCommand
+
+SimpleExample:
+	cd .. && make SimpleExample
+
+TupleTest:
+	cd .. && make TupleTest
+
+server:
+	${CXX} ${ALLFLAGS} -o harvestingd harvestingd.cpp
+	
+closer:
+	${CXX} ${ALLFLAGS} -o HarvesterCloser HarvesterCloser.cpp
+
+autokey:
+	${CXX} ${ALLFLAGS} -o AutokeyTest AutokeyTest.cpp

@@ -1,0 +1,13 @@
+TupleRow: "Events"
+
+ `-- Nested tuple: PrimaryVertices
+
+TupleRow: "obj"
+ chi2	= 62.2523155212402344 <double>
+ covariance	= 2.1941511e-06, 1.6492607e-07, 1.604412e-06, 7.2217658e-07, -1.056348e-07, 3.6904929e-06 <doublevec>
+ ndof	= 74.6900711059570312 <double>
+ x	= 0.00194564589764922857 <double>
+ y	= 0.00282539124600589275 <double>
+ z	= -8.90943050384521484 <double>
+
+

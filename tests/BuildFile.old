@@ -1,0 +1,17 @@
+<External ref=Root>
+<lib name=z>
+
+# This is all just for the SimpleConfigurable
+<lib name=UI>
+<lib name=Notification>
+<lib name=W3Tools>
+<lib name=GenUtil>
+<External ref=SEAL Use=Framework/SealKernel></External>
+<External ref=SEAL Use=Foundation/PluginManager></External>
+<External ref=uuid></External>
+
+<lib name=DataHarvesting>
+<use name=RaveBase/DataHarvesting>
+<bin file=MultiTest.cpp></bin>
+<bin file=HarvestingTest.cpp></bin>
+<bin file=HarvestingConverter.cpp></bin>

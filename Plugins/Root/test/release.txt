@@ -1,0 +1,29 @@
+[RootReader] WARNING: this reader is still highly experimental!
+0 TupleRow: "obj"
+ chi2_	= 62.2523155212402344 <double>
+ covariance_	= 2.1941511e-06, 1.6492607e-07, 1.604412e-06, 7.2217658e-07, -1.056348e-07, 3.6904929e-06 <doublevec>
+ ndof_	= 74.6900711059570312 <double>
+ position_.fCoordinates.fX	= 0.00194564589764922857 <double>
+ position_.fCoordinates.fY	= 0.00282539124600589275 <double>
+ position_.fCoordinates.fZ	= -8.90943050384521484 <double>
+ refittedTracks_	= "**reco::Vertex**" <string>
+ tracks_.refVector_.items_	= "**edm::RefVectorBase<unsigned int>**" <string>
+ tracks_.refVector_.product_	= "**edm::RefVectorBase<unsigned int>**" <string>
+ weights_.map_	= "**edm::AssociationMap<edm::OneToValue<vector<reco::Track>,float,unsigned int> >**" <string>
+ weights_.ref_.key.product_	= "**edm::RefProd<vector<reco::Track> >**" <string>
+
+
+1 TupleRow: "obj"
+ chi2_	= 5.65523147583007812 <double>
+ covariance_	= 1.9472099e-05, 8.5008642e-06, 6.1792085e-06, 1.548093e-06, 1.1979444e-06, 1.7235565e-05 <doublevec>
+ ndof_	= 6.48892021179199219 <double>
+ position_.fCoordinates.fX	= -0.00339704263024032116 <double>
+ position_.fCoordinates.fY	= -0.00124334194697439671 <double>
+ position_.fCoordinates.fZ	= 6.30204439163208008 <double>
+ refittedTracks_	= "**reco::Vertex**" <string>
+ tracks_.refVector_.items_	= "**edm::RefVectorBase<unsigned int>**" <string>
+ tracks_.refVector_.product_	= "**edm::RefVectorBase<unsigned int>**" <string>
+ weights_.map_	= "**edm::AssociationMap<edm::OneToValue<vector<reco::Track>,float,unsigned int> >**" <string>
+ weights_.ref_.key.product_	= "**edm::RefProd<vector<reco::Track> >**" <string>
+
+

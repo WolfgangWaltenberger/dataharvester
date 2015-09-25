@@ -1,0 +1,12 @@
+TODO:
+=====
+- build without help2man?
+- XmlReader should be a streamable reader.
+- GzipReader currently assumes "txt" files
+- SQL Backends wanted
+- FileModes need to be respected
+- Redo networking part
+- Do binary backends with boost?
+- XmlReader based on XERCES?
+- xls | ods?
+- AIDA?

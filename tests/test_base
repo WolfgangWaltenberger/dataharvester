@@ -1,0 +1,25 @@
+use_colors="1";
+
+if [ $use_colors -eq "1" ]; then
+	fg_black=$'\e[0;30m';
+	fg_green=$'\e[0;32m';
+	fg_yellow=$'\e[0;33m';
+	fg_red=$'\e[0;31m';
+	fg_blue=$'\e[0;34m';
+	fg_magenta='\e[0;35m';
+	fg_cyan=$'\e[0;36m';
+	fg_reset=$'\e[;0m';
+else
+	fg_black=$'';
+	fg_green=$'';
+	fg_yellow=$'';
+	fg_red=$'';
+	fg_blue=$'';
+	fg_magenta='';
+	fg_cyan=$'';
+	fg_reset=$'';
+fi
+
+wd=`pwd`;
+export PATH="${wd}/..:${PATH}";
+export LD_LIBRARY_PATH="${wd}/..:${LD_LIBRARY_PATH}";

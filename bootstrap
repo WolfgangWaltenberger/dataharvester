@@ -1,0 +1,17 @@
+#!/bin/sh
+
+#FIXME -- provide autogen.sh instead of bootstrap?
+M4S="-I m4 -I m4/cedar"
+test -d /usr/local/share/aclocal &&
+{
+	M4S="$M4S -I /usr/local/share/aclocal"
+}
+
+set -x
+libtoolize --force --copy
+
+aclocal $M4S
+autoheader 
+automake -a -c --gnu
+autoconf 
+

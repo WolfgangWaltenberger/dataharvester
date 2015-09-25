@@ -1,0 +1,63 @@
+#!/bin/sh
+
+source ../checks
+
+prefix=/usr/local
+XXXpath=/usr                                                                                                    
+
+confhelp() {
+cat <<EOF
+Usage: $0 [options]
+
+Where options are:
+  --prefix         Installation prefix        (/usr/local)
+  --XXXpath        Where to find XXX         (${XXXpath})
+  --help           This help
+EOF
+}
+
+configargs="$*"
+
+if test $# -gt 0 ; then
+  while test ! "x$1" = "x" ; do
+        #echo "nargs : $# ; $*"
+    case $1 in
+      -*=*) optarg=`echo "$1" | sed 's/[-_a-zA-Z0-9]*=//'` ;;
+    esac
+    case $1 in
+      --prefix=*) prefix=$optarg ;;
+      --XXXpath=*) XXXpath=$optarg ;;
+      --help|-h) confhelp; exit 0 ;;
+      *)
+        echo "Invalid option '$1'. Try $0 --help"; exit 1 ;;
+    esac
+    shift
+    done
+fi
+
+echo "prefix: $prefix"
+echo "XXXpath: $XXXpath"
+
+if test ! "x$enable_XXX" = "xno" ; then
+  # we have XXX
+  cat > Makefile <<EOF
+PREFIX=${prefix}
+CPPFLAGS=-I.. -Iinclude -I../include `${XXXconf} --cflags` -O
+LDFLAGS=-L. `${XXXconf} --libs` -rdynamic  -lDataHarvester
+CPPFLAGS+=-Wall # -pedantic # pedantic doesnt work for XXX
+SRCS=\$(wildcard src/*.cc) 
+
+OBJS=\$(SRCS:.cc=.o)
+
+all: library
+
+library: \${OBJS}
+	\${CXX} \${LDFLAGS} -fPIC -shared -o libDHPluginXXX.so \${OBJS}
+
+clean:
+	rm -f \${OBJS} 
+
+install: all
+	cp libDHPluginXXX.so \${PREFIX}/lib
+EOF
+fi

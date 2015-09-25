@@ -1,0 +1,20 @@
+TupleRow: "Events"  (That's an event tuple) 
+ id	= 23 <int>  (Unique ids)
+
+ `-- Nested tuple: Vertex  (Reconstructed vertex)
+
+
+Now we read!
+Tuple: "Events"  (That's an event tuple)
+   1 tuple row, pointer is at 0
+
+First row: TupleRow: "Events"  (That's an event tuple) 
+ id	= 23 <int>  (Unique ids)
+
+ `-- Nested tuple: Vertex  (Reconstructed vertex)
+
+TupleRow: "Events"  (That's an event tuple) 
+ id	= 23 <int>  (Unique ids)
+
+ `-- Nested tuple: Vertex  (Reconstructed vertex)
+

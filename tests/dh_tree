@@ -1,0 +1,73 @@
+#!/usr/bin/python
+
+from harvest import *
+import sys
+
+def usage():
+  print "Usage:",sys.argv[0],"<file>"
+  sys.exit(0)
+
+def spaces ( n ):
+  ret=""
+  for i in range(n): ret=ret+" "
+  return ret
+
+def indent ( n ):
+  ret=""
+  for i in range(n): ret=ret+"   |"
+  return ret
+
+def dh_print( tuple, it, simple ):
+  for row in tuple:
+    mp={}
+    mx=0
+
+    if ( simple ):
+      for s in row.getSimpleData():
+        mp[s]=row[s]
+        tmp=len(s)
+        if ( tmp > mx ):
+          mx=tmp
+
+    nested=row.getNestedData()
+    for n in nested:
+      tmp=len(n)
+      if ( tmp > mx ):
+        mx=tmp
+
+
+    if ( it < 2 ): print indent(it),"  |"
+    if (simple):
+      ret=str(indent(it))+"   |- "
+      for m in mp:
+        tmp=m+"="+str(mp[m])+"; "
+        if ( len ( ret + tmp ) > 100 ):
+          print ret
+          ret=str(indent(it))+"   |  " 
+        ret=ret+tmp
+      print ret
+    else:
+      for m in mp:
+        key=m+":"+spaces(mx)
+        print indent(it),"  |-",key[:mx+1]," ",mp[m]
+
+    for n in nested:
+      print indent(it),"  |"
+      print indent(it),"  |-",n+":"
+      dh_print ( nested[n], it + 1, simple )
+
+
+
+if len(sys.argv)<2: usage()
+
+levels=1
+
+file=sys.argv[1]
+
+s=Reader_file(file)
+
+for tuple in s:
+  print indent(0) + tuple.getName()
+  dh_print ( tuple, 0, True )
+  print
+

@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# simple shell script that renames all #include directories, 
+# so as to comply with the CMS naming convention
+
+test -d include && { mv include interface; };
+
+for cc in `ls src/*.cc interface/*.h test/*.cpp`; do
+	echo "Converting $cc"
+  cp $cc ${cc}.new
+  for j in `ls interface/*.h`; do
+	  h=`basename $j`
+    cat ${cc}.new | sed -e "s:#include \"$h\":#include \"RaveBase/DataHarvesting/interface/$h\":" > ${cc}.new.2
+	mv ${cc}.new.2 ${cc}.new
+  done
+  mv ${cc}.new ${cc}
+done
+
+cat interface/HarvestingConfiguration.h | grep -v WITH_XML | grep -v WITH_ODBC | grep -v WITH_DBF | grep -v WITH_HDF > tmp.h
+mv tmp.h interface/HarvestingConfiguration.h

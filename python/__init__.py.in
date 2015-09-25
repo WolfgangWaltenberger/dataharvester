@@ -1,0 +1,19 @@
+# wrapper for dataharvester module
+
+import sys, ctypes
+
+# this should only fail on windows platforms... fixme
+__old_dlopen_flags = sys.getdlopenflags()
+sys.setdlopenflags(__old_dlopen_flags | ctypes.RTLD_GLOBAL) 
+
+from dataharvester import *
+__doc__ = dataharvester.__doc__
+
+# restore old dlopenflags
+sys.setdlopenflags(__old_dlopen_flags)
+
+__version__="@PACKAGE_VERSION@"
+__author__ ="Wolfgang Waltenberger"
+
+def version():
+    return __version__

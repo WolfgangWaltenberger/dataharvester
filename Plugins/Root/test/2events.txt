@@ -1,0 +1,79 @@
+Events: EventAuxiliary="<<edm::EventAuxiliary>>";
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec: present=1;
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=0.0520908687137955767; m_jetTracksAssociation.ref_.item_.index_=0; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=0.; m_jetTracksAssociation.ref_.item_.index_=1; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=2; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=3; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=4; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=5; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=6; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=7; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:fill
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv: present=1;
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=0.0520908687137955767; m_jetTracksAssociation.ref_.item_.index_=0; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=0.; m_jetTracksAssociation.ref_.item_.index_=1; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=2; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=3; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=4; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=5; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=6; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=7; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:fill
+Events:recoJetTags_combinedSVJetTags__combinedsv: present=1;
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=0.052090868353843689; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=0.; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=-1.; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=-1.; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=-1.; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=-1.; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=-1.; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=-1.; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:fill
+Events:fill
+Events: EventAuxiliary="<<edm::EventAuxiliary>>";
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec: present=1;
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=0.0399542535547501576; m_jetTracksAssociation.ref_.item_.index_=0; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=0.112445576703912295; m_jetTracksAssociation.ref_.item_.index_=1; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=0.229820115012741549; m_jetTracksAssociation.ref_.item_.index_=2; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=0.242934029693880837; m_jetTracksAssociation.ref_.item_.index_=3; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=4; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=5; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=6; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=7; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=8; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=9; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=10; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=11; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=12; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__Rec:fill
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv: present=1;
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=0.0399542535547501576; m_jetTracksAssociation.ref_.item_.index_=0; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=0.112445576703912295; m_jetTracksAssociation.ref_.item_.index_=1; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=0.229820115012741549; m_jetTracksAssociation.ref_.item_.index_=2; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=0.242934029693880837; m_jetTracksAssociation.ref_.item_.index_=3; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=4; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=5; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=6; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=7; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=8; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=9; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=10; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=11; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:obj: discriminator_=-1.; m_jetTracksAssociation.ref_.item_.index_=12; m_jetTracksAssociation.ref_.product_="<<edm::RefBase<unsigned int>>>"; vars_.m_list="<<reco::TaggingVariableList>>".
+Events:recoCombinedSVTagInfos_combinedSVJetTags__combinedsv:fill
+Events:recoJetTags_combinedSVJetTags__combinedsv: present=1;
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=0.0399542525410652161; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=0.11244557797908783; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=0.229820117354393005; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=0.242934033274650574; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=-1.; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=-1.; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=-1.; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=-1.; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=-1.; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=-1.; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=-1.; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=-1.; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:obj: m_discriminator=-1.; m_tagInfo.holder_="<<edm::RefToBase<reco::BaseTagInfo>>>".
+Events:recoJetTags_combinedSVJetTags__combinedsv:fill
+Events:fill

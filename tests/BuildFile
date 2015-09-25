@@ -1,0 +1,9 @@
+<environment>
+    <bin file=HarvestingConverter.cpp name=HarvestingConverter>
+      <use name=RaveBase/DataHarvesting>
+    </bin>
+</environment>
+
+<bin file=HarvestingConverter.cpp name=HarvestingConverter>
+<use name=RaveBase/DataHarvesting>
+</bin>

@@ -100,6 +100,7 @@ private:
    *  like any other type (const correctness ...)
    *  Note that conversions are "kept"
    */
+  mutable bool theTrimmable; // can it be trimmed?
   mutable double theDouble;
   mutable std::string theString;
   mutable long signed theInt;

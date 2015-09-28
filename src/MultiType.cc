@@ -475,6 +475,7 @@ int MultiType::goodPrecision() const
 
 void MultiType::trimType()
 {
+  if (!theTrimmable) return;
   if (theType!=kString) return;
   theType=stringIs();
   // cout << endl << " ->" << *this << "<- is a " << isA() << endl;
@@ -483,6 +484,7 @@ void MultiType::trimType()
 void MultiType::defineAs( MultiType::Type t )
 {
   theType=t;
+  theTrimmable=false;
 }
 
 MultiType::Type MultiType::stringIs() const
@@ -612,6 +614,7 @@ MultiType::operator string() const
 
 void MultiType::clear()
 {
+  theTrimmable=true;
   // destroy type info
   theType=kNone;
 

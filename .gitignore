@@ -89,6 +89,9 @@ libtool
 ltmain.sh
 missing
 my-configure
+log
+ltmain.sh
+missing
 py-compile
 python/.deps/
 python/.dirstamp
@@ -98,7 +101,6 @@ python/Makefile.in
 python/__init__.py
 python/dataharvester.cc
 python/dataharvester.py
-src/.MultiType.cc.swp
 src/.deps/
 src/.libs/
 src/Makefile

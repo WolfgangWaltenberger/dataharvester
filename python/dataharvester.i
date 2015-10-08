@@ -128,17 +128,17 @@ using namespace dataharvester;
      """ Convert a MultiType into a 'native' python
          variable. """
      if not m.__class__ == MultiType: return m
-     if ( m.isA() == "double" ):
+     if ( m.isA() in [ "double", "float" ] ):
        return m.asDouble()
-     if ( m.isA() == "int" ):
+     if ( m.isA() in [ "int64", "int32" ] ):
        return m.asInt()
      if ( m.isA() == "bool" ):
        return m.asBool()
      if ( m.isA() == "string" ):
        return m.asString()
-     if ( m.isA() == "intvec" ):
+     if ( m.isA() in [ "int32vec", "int64vec" ] ):
        return list( m.asIntVector() )
-     if ( m.isA() == "doublevec" ):
+     if ( m.isA() in [ "doublevec", "floatvec" ] ):
        return list( m.asDoubleVector() )
      return m
 

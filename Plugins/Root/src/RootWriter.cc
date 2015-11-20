@@ -133,7 +133,11 @@ RootWriter::~RootWriter()
       ostr << "dataharvester_merge -i " << theFileName << " -o " << theFileName 
            << endl;
       // cout << "[RootWriter] " << ostr.str() << endl;
-      system ( ostr.str().c_str() );
+      int ret = system ( ostr.str().c_str() );
+      if ( ret != 0 )
+      {
+        cout << "[RootWriter] Error: when merging: " << ret << endl;
+      }
     }
   };
 }

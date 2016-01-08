@@ -30,6 +30,7 @@ public:
   operator std::string() const;
   operator long() const;
   operator int() const;
+  operator unsigned() const;
   operator bool() const;
 
   /// In an array, return the nth element,

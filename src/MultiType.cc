@@ -602,6 +602,11 @@ MultiType::operator int() const
   return (int) (this->asLong() );
 }
 
+MultiType::operator unsigned() const
+{
+  return (int) (this->asLong() );
+}
+
 MultiType::operator bool() const
 {
   return (bool) (this->asLong() );

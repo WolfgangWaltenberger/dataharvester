@@ -176,7 +176,6 @@ using namespace dataharvester;
            return self.descendInFirstRow ( s )
          if self.hasValueInFirstRow ( s ):
            return self.getRow(0)[s]
-       # more than one row
        if self.hasValueInFirstRow ( s ):
          return self.getAll ( s )
        return None
